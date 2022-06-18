@@ -2,12 +2,10 @@ body {
   max-width: 1080px;
   margin-right: auto;
   margin-left: auto;
-  /* background-color: darkcyan; */
 }
 
 .container {
   display: flex;
-  /* background-color: aqua; */
 }
 
 .card {
@@ -15,9 +13,26 @@ body {
 }
 
 .img-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   color: white;
-  height: 340px;
-  background-image: url(../img/selective-closeup-shot-of-gray-cat-head-with-blue-eyes-with-blurry-background.jpg);
+  text-shadow: black 3px 3px 2px;
+  height: 400px;
+  background-image: url(../img/gato-de-perfil-2.png);
   background-size: cover;
   background-position: center;
+}
+
+.img-principal h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.img-principal p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin-left: 10px;
 }
