@@ -13,3 +13,11 @@ body {
 .card {
   margin: 10px;
 }
+
+.img-principal {
+  color: white;
+  height: 340px;
+  background-image: url(../img/selective-closeup-shot-of-gray-cat-head-with-blue-eyes-with-blurry-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
