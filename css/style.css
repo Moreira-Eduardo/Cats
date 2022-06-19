@@ -1,7 +1,9 @@
 body {
-  max-width: 1080px;
+  /* max-width: 1080px; */
   margin-right: auto;
   margin-left: auto;
+  height: 100vh;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .container {
@@ -20,7 +22,7 @@ body {
   color: white;
   text-shadow: black 3px 3px 2px;
   height: 400px;
-  background-image: url(../img/gato-de-perfil-2.png);
+  background-image: url(../img/beautiful-domestic-cat-lying-on-fence-3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -28,11 +30,57 @@ body {
 .img-principal h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .img-principal p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.cont-principal {
+  max-width: 1024px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-container p {
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color:cadetblue;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.description {
+  padding: 5px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: ;
+}
+
+.docs-container {
+  margin-top: 20px;
+}
+
+h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+  width: max-content;
 }
