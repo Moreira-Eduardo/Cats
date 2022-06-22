@@ -1,9 +1,7 @@
 body {
-  /* max-width: 1080px; */
   margin-right: auto;
   margin-left: auto;
   height: 100vh;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 /* ----------- Cards ---------------- */
@@ -12,20 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: cadetblue;
-  height: 300px;
-}
-
-.tarjeta {
-  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 80px;
-  margin: 10px;
-  background-color: burlywood;
-}
-
-.tarjeta img {
-  width: 20%;
+  /* background-color: cadetblue; */
 }
 
 /* ----------- Banner ---------------- */
@@ -91,12 +78,12 @@ body {
   margin-top: 20px;
 }
 
-h2 {
+/* h2 {
   background-color: antiquewhite;
   border-radius: 5px;
   padding: 5px;
   width: max-content;
-}
+} */
 
 /* ----------- Footer ---------------- */
 
