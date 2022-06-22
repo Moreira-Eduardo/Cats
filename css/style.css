@@ -6,52 +6,99 @@ body {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
-.container {
+/* ----------- Cards ---------------- */
+
+.cards-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cadetblue;
+  height: 300px;
 }
 
-.card {
+.tarjeta {
+  display: flex;
+  width: 100%;
+  height: 80px;
   margin: 10px;
+  background-color: burlywood;
 }
 
-.img-principal {
+.tarjeta img {
+  width: 20%;
+}
+
+/* ----------- Banner ---------------- */
+
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
   text-shadow: black 3px 3px 2px;
+  width: 100%;
   height: 400px;
-  background-image: url(../img/beautiful-domestic-cat-lying-on-fence-3.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.img-principal h1 {
+.banner h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 50px;
   margin-left: 20px;
 }
 
-.img-principal p {
+.banner p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   margin-left: 20px;
 }
 
+.banner-index {
+  background-image: url(../img/beautiful-domestic-cat-lying-on-fence-3.jpg);
+}
+
+.banner-clasificacion {
+  background-image: url(../img/imgPrincipal.jpg);
+}
+
+/* ----------- Contenido Principal ---------------- */
+
 .cont-principal {
-  max-width: 1024px;
+  max-width: 70%;
 }
 
 .main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 
 .main-container p {
   font-size: 20px;
 }
+
+.description {
+  padding: 5px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 10px;
+}
+
+.info-container {
+  margin-top: 20px;
+}
+
+h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+  width: max-content;
+}
+
+/* ----------- Footer ---------------- */
 
 footer {
   display: flex;
@@ -65,22 +112,4 @@ footer {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.description {
-  padding: 5px;
-  background-color: antiquewhite;
-  border-radius: 10px;
-  border: 10px;
-}
-
-.docs-container {
-  margin-top: 20px;
-}
-
-h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  padding: 5px;
-  width: max-content;
 }
