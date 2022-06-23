@@ -14,6 +14,19 @@ body {
 
 .card-group {
   margin: 10px;
+  transition: width .25s, box-shadow .25s;
+  width: 300px;
+}
+
+/* .logo {
+  border-radius: 50%;
+  transition: width .25s, box-shadow .25s;
+  width: 150px;
+} */
+
+.card-group:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  width: 400px;
 }
 
 
