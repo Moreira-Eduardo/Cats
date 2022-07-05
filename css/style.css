@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Satisfy&display=swap');
 
 body {
     display: flex;
@@ -21,7 +22,7 @@ main {
 }
 
 .navbar {
-    box-shadow: black 0px 0px 10px;
+    box-shadow: rgb(20, 36, 44) 0px 0px 10px;
 }
 
 .main-content {
@@ -94,15 +95,18 @@ main {
 }
 
 .banner h1 {
-    font-size: 70px;
+    font-family: 'Satisfy', cursive;
+    font-size: 100px;
 }
 
 .banner p {
-    font-size: 30px;
+    font-family: 'Handlee', cursive;
+    font-size: 35px;
+    opacity: .5;
 }
 
 .banner-description {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .banner-index {
@@ -129,39 +133,13 @@ main {
     background-position: center;
 }
 
-.big-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    /* margin: 10px; */
-    padding: 10px;
-    /* border-radius: 5px; */
-}
-
 .caracteristicas-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.texto1 {
-    background-color: #E9DAC1;
-}
-
-.texto2 {
-    flex-direction: column;
-    background-color: #F7ECDE;
-}
-
-.container {display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .razas-container h2{
@@ -199,7 +177,7 @@ footer {
 
 .razas-container {
     flex-direction: row;
-    max-width: 302px;
+    max-width: 300px;
     margin: 10px;
     border-radius: 5px;
     border: gray 0.5px solid;
@@ -215,7 +193,7 @@ footer {
 }
 
 .razas-container img {
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
