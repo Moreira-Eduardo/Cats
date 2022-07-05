@@ -15,14 +15,13 @@ body {
     align-items: center;
 }
 
-.navbar,
-.banner,
-main {
+.navbar {
     width: 100%;
+    box-shadow: rgb(20, 36, 44) 0px 0px 10px;
 }
 
-.navbar {
-    box-shadow: rgb(20, 36, 44) 0px 0px 10px;
+main {
+    width: 100%;
 }
 
 .main-content {
@@ -56,6 +55,13 @@ main {
     background-position: center;
 }
 
+.bg2 {
+    height: 800px;
+    background-image: url(../img/medium-shot-smiley-kid-holding-cute-cat.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
 /* Cards */
 .tarjetas {
     height: auto;
@@ -87,11 +93,12 @@ main {
 /* banners */
 .banner {
     display: flex;
+    justify-content: center;
     align-items: center;
-   
+    width: 100%;
     height: 100vh;
     color: whitesmoke;
-    text-shadow: black 3px 3px 2px;
+    text-shadow: black 0px 0px 5px;
 }
 
 .banner h1 {
@@ -102,12 +109,46 @@ main {
 .banner p {
     font-family: 'Handlee', cursive;
     font-size: 35px;
-    opacity: .5;
 }
 
 .banner-description {
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    text-align: center;
 }
+
+.separador {
+    height: 10px;
+    width: 80%;
+    animation: separador-anim 4s linear 1;
+}
+@keyframes separador-anim {
+    from {
+      height: 700px;
+    }
+    to {
+      height: 10px;
+    }
+  }
+
+.sub {
+    width: 100%;
+    height: 3px;
+    background-color: whitesmoke;
+    box-shadow: black 0px 0px 5px;
+    animation: sub-anim 4s linear 1;
+}
+@keyframes sub-anim {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
 
 .banner-index {
     background-image: url(../img/banner.jpg);
@@ -122,13 +163,25 @@ main {
 }
 
 .banner-medio {
-    background-image: url(../img/grey-kitty-with-monochrome-wall-behind-her.jpg);
+    background-image: url(../img/grey-kitty-with-monochrome-wall-behind-her-2.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .banner-largo {
     background-image: url(../img/banner-pelo-largo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-acerca {
+    background-image: url(../img/adorable-kitty-looking-like-it-want-to-hunt2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-about {
+    background-image: url(../img/data-technology-blue-background-with-hacker-remixed-media\ \(1\).jpg);
     background-size: cover;
     background-position: center;
 }
@@ -233,5 +286,22 @@ iframe {
     iframe {
         width: 600px;
         height: 450px;
+    }
+
+    .banner {
+        justify-content: flex-start;
+    }
+
+    .banner-description {
+        margin-left: 50px;
+    }
+
+    .banner-medio {
+        background-image: url(../img/grey-kitty-with-monochrome-wall-behind-her.jpg);
+        background-position: right;
+    }
+
+    .banner-acerca {
+        background-image: url(../img/adorable-kitty-looking-like-it-want-to-hunt.jpg);
     }
 }
