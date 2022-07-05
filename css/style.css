@@ -122,7 +122,7 @@ main {
 .separador {
     height: 10px;
     width: 80%;
-    animation: separador-anim 4s linear 1;
+    animation: separador-anim 3s linear 1;
 }
 @keyframes separador-anim {
     from {
@@ -138,7 +138,7 @@ main {
     height: 3px;
     background-color: whitesmoke;
     box-shadow: black 0px 0px 5px;
-    animation: sub-anim 4s linear 1;
+    animation: sub-anim 3s linear 1;
 }
 @keyframes sub-anim {
     from {
@@ -212,8 +212,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: whitesmoke;
+}
+
+.footer-content a {
+    color: whitesmoke;
 }
 
 /* razas container */
