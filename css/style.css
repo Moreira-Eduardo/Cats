@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
 body {
     display: flex;
     flex-direction: column;
@@ -139,6 +141,14 @@ main {
     /* border-radius: 5px; */
 }
 
+.caracteristicas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .texto1 {
     background-color: #E9DAC1;
 }
@@ -210,15 +220,35 @@ footer {
     border-top-right-radius: 5px;
 }
 
+i {
+    font-size: 40px;
+    transition: .3s linear;
+}
+
+i:hover {
+    font-size: 50px;
+}
+
+.boton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
 iframe {
     width: 300px;
     height: 200px;
+    border-radius: 10px;
 }
 
 /* Media Queries */
 
 @media screen and (min-width: 850px) {
-    .main-container {
+    .main-container,
+    .caracteristicas-container {
         width: 80%;
     }
 
