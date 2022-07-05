@@ -1,117 +1,229 @@
 body {
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* ----------- Cards ---------------- */
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-group {
-  margin: 10px;
-  transition: width .25s, box-shadow .25s;
-  width: 300px;
+.navbar,
+.banner,
+main {
+    width: 100%;
 }
 
-/* .logo {
-  border-radius: 50%;
-  transition: width .25s, box-shadow .25s;
-  width: 150px;
-} */
-
-.card-group:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
-  width: 400px;
+.navbar {
+    box-shadow: black 0px 0px 10px;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
 
-/* ----------- Banner ---------------- */
+.main-description {
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    /* text-shadow: rgb(255, 255, 255) 0px 0px 3px; */
+}
 
+.sin-bg {
+    background-color: #CDF0EA;
+}
+
+.sin-bg2 {
+    background-color: #b1ded7;
+}
+
+.bg1 {
+    height: 700px;
+    background-image: url(../img/kitty-cats-on-the-pillow.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Cards */
+.tarjetas {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.card img{
+    width: 100%
+}
+
+/* banners */
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: white;
-  text-shadow: black 3px 3px 2px;
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
+    display: flex;
+    align-items: center;
+   
+    height: 100vh;
+    color: whitesmoke;
+    text-shadow: black 3px 3px 2px;
 }
 
 .banner h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
-  margin-left: 20px;
+    font-size: 70px;
 }
 
 .banner p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  margin-left: 20px;
+    font-size: 30px;
+}
+
+.banner-description {
+    margin-left: 20px;
 }
 
 .banner-index {
-  background-image: url(../img/beautiful-domestic-cat-lying-on-fence-3.jpg);
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: top;
 }
 
-.banner-clasificacion {
-  background-image: url(../img/imgPrincipal.jpg);
+.banner-corto {
+    background-image: url(../img/banner-pelo-corto.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-/* ----------- Contenido Principal ---------------- */
-
-.cont-principal {
-  max-width: 70%;
+.banner-medio {
+    background-image: url(../img/grey-kitty-with-monochrome-wall-behind-her.jpg);
+    background-size: cover;
+    background-position: top;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+.banner-largo {
+    background-image: url(../img/banner-pelo-largo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.main-container p {
-  font-size: 20px;
+.big-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* margin: 10px; */
+    padding: 10px;
+    /* border-radius: 5px; */
 }
 
-.description {
-  padding: 5px;
-  background-color: antiquewhite;
-  border-radius: 10px;
-  border: 10px;
+.texto1 {
+    background-color: #E9DAC1;
 }
 
-.info-container {
-  margin-top: 20px;
+.texto2 {
+    flex-direction: column;
+    background-color: #F7ECDE;
 }
 
-/* h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  padding: 5px;
-  width: max-content;
-} */
+.container {display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-/* ----------- Footer ---------------- */
+.razas-container h2{
+    text-align: center;
+    font-size: 24px;
+}
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color:cadetblue;
+}
+  
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* razas container */
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.razas-container {
+    flex-direction: row;
+    max-width: 302px;
+    margin: 10px;
+    border-radius: 5px;
+    border: gray 0.5px solid;
+    background-color: #CDF0EA;
+    
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.razas-container:hover {
+    -webkit-box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.47);
+}
+
+.razas-container img {
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+iframe {
+    width: 300px;
+    height: 200px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 850px) {
+    .main-container {
+        width: 80%;
+    }
+
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
 }
