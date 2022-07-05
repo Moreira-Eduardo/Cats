@@ -37,7 +37,6 @@ main {
     flex-direction: column;
     width: 80%;
     text-align: center;
-    /* text-shadow: rgb(255, 255, 255) 0px 0px 3px; */
 }
 
 .sin-bg {
@@ -147,8 +146,7 @@ main {
     to {
       width: 100%;
     }
-  }
-
+}
 
 .banner-index {
     background-image: url(../img/banner.jpg);
@@ -190,7 +188,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
